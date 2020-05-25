@@ -1,2 +1,2 @@
 # learner-algorithm
-learn algorithm in Java
+learn the algorithm in Java
