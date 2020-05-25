@@ -7,8 +7,8 @@ import com.hyl.algorithm.core.intf.Strategy;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 桶排序
- *
+ * <h>桶排序</h>
+ * <li>时间复杂度：O(m+n)</li>
  * @author hyl
  * @version v1.0: BucketStrategy.java, v 0.1 2020/5/17 3:38 $
  */
@@ -58,6 +58,7 @@ public class BucketStrategy implements Strategy {
         System.out.println();
 
         System.out.println("排序以后：");
+        //m+n
         for (int index = 0; index < bucket.length; index++) {
             if (bucket[index] == 0) {
                 continue;

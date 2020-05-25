@@ -2,6 +2,7 @@ package com.hyl.algorithm.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.StopWatch;
 
@@ -15,13 +16,15 @@ import com.hyl.algorithm.core.intf.Strategy;
 public class StrategyTest {
 
     @Autowired
+    // @Qualifier("bubbleStrategy")
+    @Qualifier("bucketStrategy")
     private Strategy strategy;
 
 
     @Test
     public void test(){
 
-        StopWatch stopWatch = new StopWatch("桶排序");
+        StopWatch stopWatch = new StopWatch("排序");
 
         stopWatch.start("初始化");
         strategy.init(100);
