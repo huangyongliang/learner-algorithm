@@ -9,6 +9,9 @@ import org.springframework.util.StopWatch;
 import com.hyl.algorithm.core.intf.Strategy;
 
 /**
+ * Test&trade;
+ * <p>
+ *
  * @author hyl
  * @version v1.0: StrategyTest.java, v 0.1 2020/5/17 3:53 $
  */
@@ -16,9 +19,13 @@ import com.hyl.algorithm.core.intf.Strategy;
 public class StrategyTest {
 
     @Autowired
-    // @Qualifier("bubbleStrategy")
-    @Qualifier("bucketStrategy")
+    @Qualifier("bubbleStrategy")
+    // @Qualifier("bucketStrategy")
+    // @Qualifier("quicksortStrategy")
     private Strategy strategy;
+
+    //测试数量
+    private int size = 100;
 
 
     @Test
@@ -27,7 +34,7 @@ public class StrategyTest {
         StopWatch stopWatch = new StopWatch("排序");
 
         stopWatch.start("初始化");
-        strategy.init(100);
+        strategy.init(size);
         stopWatch.stop();
         stopWatch.start("排序执行");
         strategy.strategy();
