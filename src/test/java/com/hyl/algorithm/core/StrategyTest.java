@@ -19,9 +19,10 @@ import com.hyl.algorithm.core.intf.Strategy;
 public class StrategyTest {
 
     @Autowired
-    @Qualifier("bubbleStrategy")
+    // @Qualifier("bubbleStrategy")
     // @Qualifier("bucketStrategy")
     // @Qualifier("quicksortStrategy")
+    @Qualifier("bracketStrategy")
     private Strategy strategy;
 
     //测试数量
