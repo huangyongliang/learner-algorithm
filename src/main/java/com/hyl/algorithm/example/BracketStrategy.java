@@ -1,4 +1,4 @@
-package com.hyl.algorithm.core.impl;
+package com.hyl.algorithm.example;
 
 import org.springframework.stereotype.Component;
 

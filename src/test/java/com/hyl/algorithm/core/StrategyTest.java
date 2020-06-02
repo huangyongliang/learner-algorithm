@@ -22,7 +22,8 @@ public class StrategyTest {
     // @Qualifier("bubbleStrategy")
     // @Qualifier("bucketStrategy")
     // @Qualifier("quicksortStrategy")
-    @Qualifier("bracketStrategy")
+    // @Qualifier("bracketStrategy")
+    @Qualifier("cardGameStrategy")
     private Strategy strategy;
 
     //测试数量
