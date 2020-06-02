@@ -9,7 +9,7 @@ import com.hyl.algorithm.service.intf.StudentService;
 
 /**
  * <h>冒泡排序</h>
- * <li>时间复杂度：O(n*n)</li>
+ * <li>时间复杂度：O(N<sup>2</sup>)</li>
  *
  * @author Hyl
  * @version V 0.1

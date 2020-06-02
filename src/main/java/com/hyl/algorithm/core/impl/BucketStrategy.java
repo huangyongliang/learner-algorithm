@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * <h>桶排序</h>
- * <li>时间复杂度：O(m+n)</li>
+ * <li>时间复杂度：O(M+N)</li>
  * @author hyl
  * @version v1.0: BucketStrategy.java, v 0.1 2020/5/17 3:38 $
  */

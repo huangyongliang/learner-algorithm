@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 快速排序算法
  * <p>
- *
+ * <li>时间复杂度：最差O(N<sup>2</sup>)、平均O(NlogN) </li>
  * @author Hyl
  * @version V 0.1
  * @since 0.1 2020-05-31 08:36
