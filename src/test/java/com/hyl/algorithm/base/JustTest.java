@@ -9,16 +9,15 @@ import org.junit.jupiter.api.Test;
  */
 public class JustTest {
 
-
-
     @Test
     public void test() {
-
-        int[] arrInt = new int[10];
-
-        System.out.println(arrInt.length);
-
-
+        for (int i = 0; i < 10; i++) {
+            if ((i * 10 + 3) * 6528 == (30 + i) * 8256){
+                System.out.println(i);
+                System.out.println("("+i+" * 10 + 3) * 6528 == (30 + "+i+") * 8256");
+                System.out.println((i * 10 + 3) * 6528);
+            }
+        }
     }
 
 }
