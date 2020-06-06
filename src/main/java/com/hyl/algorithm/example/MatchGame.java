@@ -34,7 +34,7 @@ public class MatchGame {
 
     private void gameBegin(int matchCount) {
 
-        int a, b, c, total=0;
+        int a, b, c, total = 0;
 
         for (a = 0; a <= 1111; a++) {
             for (b = 0; b <= 1111; b++) {
@@ -43,11 +43,11 @@ public class MatchGame {
 
                 if (getMatchCount(a) + getMatchCount(b) + getMatchCount(c) == matchCount - 4) {
                     total++;
-                    System.out.println(a+"(A)+"+b+"(B)="+c+"(C)");
+                    System.out.println(a + "(A)+" + b + "(B)=" + c + "(C)");
                 }
             }
         }
-        System.out.println("total:+"+total);
+        System.out.println("total:+" + total);
     }
 
     public static void main(String[] args) {
