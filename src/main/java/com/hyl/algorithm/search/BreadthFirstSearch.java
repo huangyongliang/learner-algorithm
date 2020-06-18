@@ -27,8 +27,8 @@ public class BreadthFirstSearch {
         startX = 1;
         startY = 1;
         //目标位置
-        p = 3;
-        q = 3;
+        p = 9;
+        q = 9;
         //地图大小
         n = 10;
         m = 10;
@@ -92,7 +92,6 @@ public class BreadthFirstSearch {
     }
 
     public void print() {
-
         System.out.println(que[tail - 1].s);
     }
 
