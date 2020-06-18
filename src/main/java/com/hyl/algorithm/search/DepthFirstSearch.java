@@ -1,8 +1,11 @@
-package com.hyl.algorithm.example;
+package com.hyl.algorithm.search;
 
 /**
  * 深度优先
  * <p>
+ *
+ * <li>时间复杂度 O(n)</li>
+ * <li>空间复杂度 O(n)</li>
  *
  * @author Hyl
  * @version V 0.1
@@ -42,7 +45,7 @@ public class DepthFirstSearch {
     }
 
     public static void main(String[] args) {
-        DepthFirstSearch depthFirstSearch = new DepthFirstSearch(13);
+        DepthFirstSearch depthFirstSearch = new DepthFirstSearch(4);
         depthFirstSearch.dfs(1);
         System.out.println("total: " + depthFirstSearch.getTotal());
     }
