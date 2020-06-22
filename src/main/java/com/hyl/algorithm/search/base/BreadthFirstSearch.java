@@ -1,4 +1,4 @@
-package com.hyl.algorithm.search;
+package com.hyl.algorithm.search.base;
 
 /**
  * 广度优先

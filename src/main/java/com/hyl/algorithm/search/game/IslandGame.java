@@ -1,4 +1,4 @@
-package com.hyl.algorithm.search;
+package com.hyl.algorithm.search.game;
 
 /**
  * 宝岛探险

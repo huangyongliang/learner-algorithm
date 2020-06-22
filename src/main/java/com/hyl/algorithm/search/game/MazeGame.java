@@ -1,4 +1,4 @@
-package com.hyl.algorithm.search;
+package com.hyl.algorithm.search.game;
 
 /**
  * <h>迷宫游戏(深度优先算法例子)</h>
