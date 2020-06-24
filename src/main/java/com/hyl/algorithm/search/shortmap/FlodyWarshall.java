@@ -1,6 +1,7 @@
 package com.hyl.algorithm.search.shortmap;
 
 import com.hyl.algorithm.search.base.SearchIntf;
+import com.hyl.algorithm.search.base.SearchIntfFactory;
 
 /**
  * FlodyWarshall
@@ -67,14 +68,6 @@ public class FlodyWarshall implements SearchIntf {
     }
 
     public static void main(String[] args) {
-        SearchIntf searchIntf = new FlodyWarshall();
-        searchIntf.init();
-        long start = System.currentTimeMillis();
-        searchIntf.find();
-        long end = System.currentTimeMillis();
-        System.out.println("执行时间:" + (start - end) + "ms");
-        searchIntf.print();
-
+        SearchIntfFactory.produce(FlodyWarshall.class);
     }
-
 }
