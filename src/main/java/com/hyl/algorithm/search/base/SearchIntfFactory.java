@@ -13,16 +13,16 @@ public abstract class SearchIntfFactory {
     public static void produce(Class<? extends SearchIntf> intfClass) {
         try {
             SearchIntf searchIntf = intfClass.newInstance();
-            long start = System.currentTimeMillis();
+            long start = System.nanoTime();
             searchIntf.init();
-            long initEnd = System.currentTimeMillis();
+            long initEnd = System.nanoTime();
             searchIntf.find();
-            long findEnd = System.currentTimeMillis();
+            long findEnd = System.nanoTime();
             searchIntf.print();
-            long printEnd = System.currentTimeMillis();
+            long printEnd = System.nanoTime();
             System.out.println(
-                "初始化时间:" + (initEnd -start ) + "ms," + "执行时间:" + (findEnd - initEnd) + "ms," + "打印时间" + (printEnd
-                    - findEnd) + "ms.");
+                "初始化时间:\t" + (initEnd -start ) + "ns." + "\n执行时间:\t" + (findEnd - initEnd) + "ns." + "\n打印时间:\t" + (printEnd
+                    - findEnd) + "ns.");
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }
