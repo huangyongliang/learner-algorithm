@@ -105,7 +105,6 @@ public class BellmanFordPro implements SearchIntf {
             book[que[head]] = 0;
             head++;
         }
-
     }
 
     @Override

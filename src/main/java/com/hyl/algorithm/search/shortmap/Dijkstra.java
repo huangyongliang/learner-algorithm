@@ -50,10 +50,8 @@ public class Dijkstra implements SearchIntf {
         findFor();
     }
 
-
-
-    private void findFor(){
-        for (int i = 1;i<=6-1;i++){
+    private void findFor() {
+        for (int i = 1; i <= 6 - 1; i++) {
             // 确定新的点
             int min = 7;
             int minMap = 9999;
