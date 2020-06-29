@@ -36,7 +36,7 @@ public class PrimMinTree implements SearchIntf {
         graph.addUndirected(5, 6, 4);
         dis = new int[n + 1];
         books = new int[n + 1];
-        start = 5;
+        start = 1;
         length = 0;
     }
 
